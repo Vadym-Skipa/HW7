@@ -7,12 +7,12 @@ while key:
 readfile.close()
 # writefile = open("./task1_subtitles.txt", "wt")
 # for text in subtitles.values():
-#     writefile.write(text)
+#     writefile.write(text + " ")
 # writefile.close()
 
 readfile = open("./task1.txt")
 writefile = open("./task1_subtitles.txt", "wt")
 for line in readfile.readlines()[1::2]:
-    writefile.write(line.replace("\n", ""))
+    writefile.write(line.replace("\n", " "))
 readfile.close()
 writefile.close()
